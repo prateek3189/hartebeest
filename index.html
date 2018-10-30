@@ -1,0 +1,198 @@
+<!-- Some references -->
+<!--
+    https://platform.html5.org/
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Hartebeest - HTML5</title>
+        <link rel="stylesheet" href="./style.css">
+        <script type="text/javascript" src="./media.js"></script>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Hartebeest - HTML5</h1>
+            </header>
+            <hr>
+            <p>Some usefull references</p>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://platform.html5.org/">HTML 5 Platform</a>
+                    </li>
+                    <li>
+                        <a href="https://caniuse.com/">Can I Use</a>
+                    </li>
+                    <li>
+                        <a href="https://modernizr.com/">Modernizer</a>
+                    </li>
+                    <li>
+                        <a href="http://html5please.com/">HTML 5 Please</a>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+            <article class="">
+                Article Tag
+            </article>
+            <aside class="">
+                Aside Tag
+            </aside>
+            <section>
+                Section Tag
+            </section>
+            <hr>
+            <time date="2018-10-08" pubdate>October 08, 2018</time>
+            <hr>
+            <figure>
+                <figcaption>This is a sample image</figcaption>
+                <img src="./images/sample.jpg" alt="Figure Caption">
+            </figure>
+            <hr>
+            <details open>
+                <summary>This is a detail tag</summary>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </details>
+            <hr>
+            <mark>This is a mark tag</mark>
+            <hr>
+            <output name="result">This is a  output tag</output>
+
+            <hr>
+            <embed type="video/quicktime" src="#" width="300" height="300">
+            <div>This is an embed tag</div>
+
+            <hr>
+            <video src="videofile.ogg" autoplay poster="posterimage.jpg">
+                <source src="https://" type="video/">
+                    <track kind="subtitles" src="sampleSubtitles_en.srt" srclang="en">
+            </video>
+            <div>This is an video tag</div>
+
+            <hr>
+            <meter value="20" min="0" max="100"></meter>
+
+            <hr>
+            <progress value="50" max="100">0%</progress>
+
+            <hr>
+            <math>
+                =10+20
+            </math>
+
+            <hr>
+            <input type="text" list="colors" name="" value="">
+            <datalist id="colors">
+                <option value="Blue">
+                <option value="White">
+                <option value="Green">
+                <option value="Red">
+            </datalist>
+
+            <!-- Finding part of the page -->
+            <hr>
+            <div class="finding-part-of-the-page">
+                <h3>Finding Part of the page</h3>
+                <div class="some-class">
+                    getElementsByClassName
+
+                    <ul>
+                        <li class="list">This is 1 list item</li>
+                        <li class="list">This is 2 list item</li>
+                        <li class="list">This is 3 list item</li>
+                        <li class="list">This is 4 list item</li>
+                        <li class="list">This is 5 list item</li>
+                    </ul>
+                </div>
+
+                <hr>
+                <div class="new-element">
+                    <h3>Color</h3>
+                    <input type="color" name="" value="">
+
+                    <hr>
+                    <h3>Data List</h3>
+                    <input list="colors" name="" value="">
+                    <datalist id="colors">
+                        <option value="Blue">
+                        <option value="Blue">
+                        <option value="Blue">
+                        <option value="Blue">
+                    </datalist>
+
+                    <hr>
+                    <h3>Date</h3>
+                    <input type="date" name="" value="">
+
+                    <hr>
+                    <h3>Email</h3>
+                    <input type="email" name="" value="">
+                    <hr>
+                    <h3>URL</h3>
+                    <input type="url" name="" value="">
+                    <hr>
+                    <h3>Telephone</h3>
+                    <input type="tel" name="" value="">
+                    <hr>
+                    <h3>Month</h3>
+                    <input type="month" name="" value="">
+                    <hr>
+                    <h3>Number</h3>
+                    <input type="number" name="" value="">
+                    <hr>
+                    <h3>Range</h3>
+                    <input type="range" name="" value="">
+                    <hr>
+                    <h3>Week</h3>
+                    <input type="week" name="" value="">
+                    <hr>
+                    <h3>Time</h3>
+                    <input type="time" name="" value="">
+                    <hr>
+                    <h3>Search</h3>
+                    <input type="search" name="" value="">
+                </div>
+
+                <div class="">
+                    <h3>Native Validations</h3>
+                    <form class="" action="index.html" method="post">
+                        <input type="text" required placeholder="Name" autofocus name="" value="">
+                        <input type="url" required placeholder="Email" name="" value="hi">
+                        <input type="text" required
+                        pattern="/^[A-Z]$/" placeholder="Name" name="" value="hi">
+
+                        <button type="submit" name="button">Submit</button>
+                    </form>
+                </div>
+                <div class="">
+                    <a href="forms.html">Forms Validations</a>
+                </div>
+
+                <h3>Video</h3>
+                <video id="vid" controls loop preload="auto" width="500">
+                    <source src="./media/sample_video.mp4">
+                        <p>Browser does not support</p>
+                </video>
+
+                <h3>Audio</h3>
+                <audio width="200" loop controls preload="auto">
+                    <source src="./media/sample_audio.mp3">
+                        <p>Browser does not support</p>
+                </audio>
+                <br/>
+                <a target="_blank" href="./video.html">Go to Video</a>
+
+                <a href="./canvas.html">Canvas</a>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <footer>&copy; Hartebeest 2018</footer>
+        </main>
+    </body>
+
+    <script type="text/javascript" src="./index.js"></script>
+</html>

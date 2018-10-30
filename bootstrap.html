@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Form Validation</title>
+        <link rel="icon" href="./images/logo.jpg" type="image/png">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="./style.css" >
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <script type="text/javascript" src="./jquery.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="./bootstarp-form.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Hartebeest - HTML5</h1>
+        </header>
+        <hr>
+        <p>Bootstrap</p>
+        <form class="" action="index.html" method="post" id="email-form">
+            <input
+                type="text"
+                id="username"
+                pattern="[a-zA-Z0-9 ]{5,}"
+                placeholder="Username"
+                maxlength="30"
+                title="Username"
+                required
+                data-content="A username is required. The Username must be alphanumeric character only"
+                data-role="validate"
+                class="form-control">
+
+                <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                title="Email"
+                required
+                data-content="An Email is required"
+                data-role="validate"
+                class="form-control">
+
+                <div class="push-down-top">
+                    <button type="button" name="button" class="btn btn-link">Cancel</button>
+                    <button type="button" id="change-button" data-role="trigger-validation" name="button" class="btn">Login</button>
+                </div>
+
+                <div class="">Form is: <span id="msg"></span></div>
+        </form>
+
+    </body>
+</html>

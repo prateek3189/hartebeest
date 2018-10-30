@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML5 - Video Controls</title>
+    </head>
+    <body>
+        <video id="vid" width="500">
+            <source src="./media/sample_video.mp4">
+                <p>Browser does not support</p>
+        </video><br/>
+        <input type="range" id="scrubber" min="0" step="1" max="10" value="0" title="Scrubber" style="width:450px;">
+        <span id="remainingTime">0:00</span>/
+        <span id="totalTime">0:00</span>
+
+        <br/>
+        <br/>
+        <button type="button" id="playPause">Play</button>
+        <button type="button" id="begin">&lt;&lt;</button>
+        <button type="button" id="rewind">&lt;</button>
+        <button type="button" id="fastForward">&gt;</button>
+        <button type="button" id="end">&gt;&gt;</button>
+        <button type="button" id="stop">Stop</button>
+        <br/>
+        <br/>
+        Volume: <input type="range" id="volume" min="0" step="0.1" max="1" title="Volume"> <button type="button" id="mute">Mute</button>
+        <br/>
+        <br/>
+        Playback Speed: <input type="range" id="playbackRate" min="1" step="1" max="4" value="1" title="Playeback Rate">
+    </body>
+    <script type="text/javascript" src="./media.js"></script>
+</html>

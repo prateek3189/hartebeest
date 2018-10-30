@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Form Validation</title>
+        <link rel="stylesheet" href="./style.css">
+        <script type="text/javascript" src="./form.js">
+
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Hartebeest - HTML5</h1>
+        </header>
+        <hr>
+        <p>Form Validations</p>
+        <form class="" action="index.html" method="post" id="validation-form">
+            <input
+                id="username"
+                type="text"
+                name="username"
+                pattern="[a-zA-Z ][5,]"
+                placeholder="Username"
+                maxlength="30"
+                required />
+            <div class="invalid">Please enter a valid username</div>
+            <br>
+            <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required />
+            <div class="invalid">Please enter a valid Email</div>
+        </form>
+
+        <h3>Custom Validation Form</h3>
+        <form id="custom-validation" action="index.html" method="post">
+            <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+                class="form-control" />
+            <div class="validation-message">
+                <span data-rules="valueMissing" class="hide">An email address is required</span>
+                <span data-rules="patternMimatch" class="hide">Please enter a valid Email Address</span>
+            </div>
+            <br>
+            <input
+                id="username"
+                type="text"
+                name="username"
+                pattern="[a-zA-Z ][5,]"
+                placeholder="Username"
+                maxlength="30"
+                required
+                class="form-control" />
+            <div class="validation-message">
+                <span data-rules="valueMissing" class="hide">The Username is required</span>
+                <span data-rules="patternMimatch" class="hide">Please enter a valid username</span>
+            </div>
+            <div class="">
+                <button type="reset" id="submitButton" name="button">Reset</button>
+                <button type="submit" name="button" id="resetButton">Submit</button>
+            </div>
+        </form>
+        <br/>
+        <h3>
+            <a href="bootstrap.html">Bootstrap</a>
+        </h3>
+    </body>
+</html>
